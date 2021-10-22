@@ -1,0 +1,6 @@
+								Etapas do processo de criação
+								
+1 - Criando o player
+	1.1 - Importando as sprites do player - FEITO
+	1.2 - Criando o objeto do player e dando a sprite dele - FEITO
+	
