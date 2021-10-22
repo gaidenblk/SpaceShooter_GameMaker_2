@@ -7,7 +7,5 @@ down = keyboard_check(ord("S"));
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
 
-y -= up;
-y += down;
-x -= left;
-x += right;
+y += (down - up) * velocidade;
+x += (right - left) * velocidade;
