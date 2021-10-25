@@ -17,3 +17,17 @@
 	3.4 - Fazendo o jogador atirar ao apertar espaço - FEITO
 	3.5 - Dando um efeito legal para o tiro - FEITO
 		3.5.1 - Fazendo ele nascer grande e depois diminuir - FEITO
+		
+4 - Criando o Primeiro Inimigo
+	4.1 - Importando as Sprites - FEITO
+	4.2 - Criando o Objeto - FEITO
+	4.3 - Fazendo ele ir para baixo - FEITO
+	
+5 - Fazendo o iminigo 01 atirar
+	5.1 - Importando as sprites - FEITO
+	5.2 - Fazendo o objeto do tiro - FEITO
+	5.3 - Fazendo o tiro ir para baixo - FEITO
+	5.4 - Atirando - FEITO
+	5.5 - Dando o Efeito de Disparo - FEITO
+	
+	
