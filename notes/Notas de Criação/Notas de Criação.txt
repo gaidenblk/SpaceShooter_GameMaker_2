@@ -6,6 +6,14 @@
 	1.3 - Criando a movimentação do player com o WASD dentro do step - FEITO
 	1.4 - Melhorando o codigo de movimentação
 	
-2 - Ajustando as dimensões da room e ajustando a view e viewport da room
+2 - Ajustando as dimensões da room e ajustando a view e viewport da room - FEITO
 	2.1 - Criando uma viewport e camera para o jogo - FEITO
 	2.2 - Ajustando as dimensões para a view ser grande e o viewport menor - FEITO
+	
+3 - Atirando!
+	3.1 - Importando as sprites de tiro do player - FEITO
+	3.2 - Criando o objeto de tiro do player - FEITO
+	3.3 - Fazendo o tiro ir pra cima - FEITO
+	3.4 - Fazendo o jogador atirar ao apertar espaço - FEITO
+	3.5 - Dando um efeito legal para o tiro - FEITO
+		3.5.1 - Fazendo ele nascer grande e depois diminuir - FEITO
