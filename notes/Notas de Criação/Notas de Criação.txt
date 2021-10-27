@@ -30,4 +30,9 @@
 	5.4 - Atirando - FEITO
 	5.5 - Dando o Efeito de Disparo - FEITO
 	
+(Criação de METODOS)
+
+6 - Fazendo o tiro do player acertar o inimigo
+	6.1 - Se destruir ao acertar o inimigo - FEITO
+	
 	
