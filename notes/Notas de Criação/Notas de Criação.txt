@@ -1,16 +1,16 @@
 								Etapas do processo de criação
 								
-1 - Criando o player
+1 - Criando o player - FEITO
 	1.1 - Importando as sprites do player - FEITO
 	1.2 - Criando o objeto do player e dando a sprite dele - FEITO
 	1.3 - Criando a movimentação do player com o WASD dentro do step - FEITO
-	1.4 - Melhorando o codigo de movimentação
+	1.4 - Melhorando o codigo de movimentação - FEITO
 	
 2 - Ajustando as dimensões da room e ajustando a view e viewport da room - FEITO
 	2.1 - Criando uma viewport e camera para o jogo - FEITO
 	2.2 - Ajustando as dimensões para a view ser grande e o viewport menor - FEITO
 	
-3 - Atirando!
+3 - Atirando! - FEITO
 	3.1 - Importando as sprites de tiro do player - FEITO
 	3.2 - Criando o objeto de tiro do player - FEITO
 	3.3 - Fazendo o tiro ir pra cima - FEITO
@@ -18,12 +18,12 @@
 	3.5 - Dando um efeito legal para o tiro - FEITO
 		3.5.1 - Fazendo ele nascer grande e depois diminuir - FEITO
 		
-4 - Criando o Primeiro Inimigo
+4 - Criando o Primeiro Inimigo - FEITO
 	4.1 - Importando as Sprites - FEITO
 	4.2 - Criando o Objeto - FEITO
 	4.3 - Fazendo ele ir para baixo - FEITO
 	
-5 - Fazendo o iminigo 01 atirar
+5 - Fazendo o iminigo 01 atirar - FEITO
 	5.1 - Importando as sprites - FEITO
 	5.2 - Fazendo o objeto do tiro - FEITO
 	5.3 - Fazendo o tiro ir para baixo - FEITO
@@ -32,13 +32,26 @@
 	
 (Criação de METODOS)
 
-6 - Fazendo o tiro do player acertar o inimigo
+6 - Fazendo o tiro do player acertar o inimigo - FEITO
 	6.1 - Se destruir ao acertar o inimigo - FEITO
-	6.2 - Criar o impacto do tiro
-	6.3 - Fazendo o  impacto do tiro desaparecer ao final da animação
-	6.4 - Fazer o tiro NÃO criar o impacto quando ele sair da room
+	6.2 - Criar o impacto do tiro - FEITO
+	6.3 - Fazendo o  impacto do tiro desaparecer ao final da animação - FEITO
+	6.4 - Fazer o tiro NÃO criar o impacto quando ele sair da room - FEITO
 
-7 - Fazendo o tiro do inimigo acertar o player
+7 - Fazendo o tiro do inimigo acertar o player e se destruindo - FEITO
+	7.1 - Fazendo o tiro do inimigo se destruir ao sair da Room - FEITO
 	
+8 - Destruindo o inimigo quando ele levar um tiro - FEITO
+	8.1 - Fazer o tiro do player também destruir o inimigo ao contato - FEITO
+	8.2 - Fazendo com que ao ser destruido o inimigo crie uma explosão - FEITO
+		8.2.1 - Criar a Sprite da explosão - FEITO
+		8.2.2 - Criar o objeto explosão - FEITO
+		8.2.3 - Fazer o inimigo instanciar a explosão ao morrer - FEITO
+		8.2.4 - Fazer a explosão se destruir no final da animação - FEITO
+
+9 - Pequenos ajustes
+	9.1 - Fazendo o inimigo se destruir ao sair da room - FEITO
+	9.2 - Melhorando o Background - FEITO
+	9.3 - Deixando nosso tiro mais bonito
 	
-	
+10 - Criando o Background do nosso jogo - FEITO
