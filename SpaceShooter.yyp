@@ -1,7 +1,9 @@
 {
   "resources": [
     {"id":{"name":"spr_tiro_player","path":"sprites/spr_tiro_player/spr_tiro_player.yy",},"order":1,},
+    {"id":{"name":"spr_tiro_brilho","path":"sprites/spr_tiro_brilho/spr_tiro_brilho.yy",},"order":5,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":2,},
+    {"id":{"name":"spr_tiro_brilho_inimigo","path":"sprites/spr_tiro_brilho_inimigo/spr_tiro_brilho_inimigo.yy",},"order":6,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_inimigo01","path":"sprites/spr_inimigo01/spr_inimigo01.yy",},"order":1,},
     {"id":{"name":"obj_tiro_impacto","path":"objects/obj_tiro_impacto/obj_tiro_impacto.yy",},"order":1,},

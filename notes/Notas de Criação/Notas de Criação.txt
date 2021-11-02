@@ -52,6 +52,13 @@
 9 - Pequenos ajustes
 	9.1 - Fazendo o inimigo se destruir ao sair da room - FEITO
 	9.2 - Melhorando o Background - FEITO
-	9.3 - Deixando nosso tiro mais bonito
+	9.3 - Deixando nosso tiro mais bonito - FEITO
+		9.3.1 - Criar sprite do brilho do tiro - FEITO
+		9.3.2 - Criar o draw event - FEITO
+		9.3.3 - Se desenhar - FEITO
+		9.3.4 - Desenhar o brilho - FEITO
+		9.3.5 - Alterar como a GPU processa a mistura de imagens - FEITO
+		9.3.6 - Criar a variável cores para mudar de cor - FEITO
+		9.3.7 - Usar o lerp para diminuir o tamanho - FEITO
 	
 10 - Criando o Background do nosso jogo - FEITO

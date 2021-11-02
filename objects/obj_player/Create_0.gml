@@ -19,3 +19,25 @@ movimenta = function()
 	left = keyboard_check(ord("A")) || keyboard_check(vk_left);
 	right = keyboard_check(ord("D")) || keyboard_check(vk_right);	
 }
+//Limitando o player dentro da tela
+limitedatela = function()
+{
+	//Vertical
+	if y > 1080 - sprite_height/2
+	{
+		y = 1080 - sprite_height/2;
+	}
+	if y < 0 + sprite_height/2
+	{
+		y = 0 + sprite_height/2;
+	}
+	//Horizontal
+	if x > 1920 - sprite_height/2
+	{
+		x = 1920 - sprite_width/2;
+	}
+	if x < 0 + sprite_width/2
+	{
+		x = 0 + sprite_width/2;
+	}	
+}

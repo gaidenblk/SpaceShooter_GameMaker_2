@@ -6,5 +6,8 @@ movimenta();
 y += (down - up) * velocidade;
 x += (right - left) * velocidade;
 
+//Mantendo player nos limites da tela
+limitedatela();
+
 //Atirando
 atirando();
