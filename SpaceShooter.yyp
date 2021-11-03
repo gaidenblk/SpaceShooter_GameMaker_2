@@ -9,6 +9,7 @@
     {"id":{"name":"obj_tiro_impacto","path":"objects/obj_tiro_impacto/obj_tiro_impacto.yy",},"order":1,},
     {"id":{"name":"Notas de Criação","path":"notes/Notas de Criação/Notas de Criação.yy",},"order":0,},
     {"id":{"name":"spr_inimigo_tiro01","path":"sprites/spr_inimigo_tiro01/spr_inimigo_tiro01.yy",},"order":0,},
+    {"id":{"name":"obj_controlador","path":"objects/obj_controlador/obj_controlador.yy",},"order":9,},
     {"id":{"name":"spr_tiro_impacto","path":"sprites/spr_tiro_impacto/spr_tiro_impacto.yy",},"order":1,},
     {"id":{"name":"obj_explosao","path":"objects/obj_explosao/obj_explosao.yy",},"order":0,},
     {"id":{"name":"obj_inimigo_tiro01","path":"objects/obj_inimigo_tiro01/obj_inimigo_tiro01.yy",},"order":0,},

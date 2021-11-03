@@ -49,7 +49,7 @@
 		8.2.3 - Fazer o inimigo instanciar a explosão ao morrer - FEITO
 		8.2.4 - Fazer a explosão se destruir no final da animação - FEITO
 
-9 - Pequenos ajustes
+9 - Pequenos ajustes - FEITO
 	9.1 - Fazendo o inimigo se destruir ao sair da room - FEITO
 	9.2 - Melhorando o Background - FEITO
 	9.3 - Deixando nosso tiro mais bonito - FEITO
@@ -60,5 +60,11 @@
 		9.3.5 - Alterar como a GPU processa a mistura de imagens - FEITO
 		9.3.6 - Criar a variável cores para mudar de cor - FEITO
 		9.3.7 - Usar o lerp para diminuir o tamanho - FEITO
+	9.4 - Deixando as explosões mais bonitas - FEITO
+		9.4.1 - Criar o draw event - FEITO
+		9.4.2 - Se desenhar - FEITO
+		9.4.3 - Me desenhar maior - FEITO
+		9.4.4 - Alterar como a GPU processa a mistura de cores - FEITO
+		9.4.5 - Criar a variável de cores - FEITO
 	
 10 - Criando o Background do nosso jogo - FEITO
