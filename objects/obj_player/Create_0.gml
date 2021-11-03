@@ -1,14 +1,48 @@
 /// @description Iniciando variáveis
 //Velocidade base do player
 velocidade = 5;
+//Tipos de disparo
+//Disparo simples
+disparosimples = function()
+{
+	instance_create_layer(x,y - sprite_height/2,"Tiros",obj_tiro_player);	
+}
+//Disparo duplo
+disparoduplo = function()
+{
+	instance_create_layer(x + sprite_width/3,y - sprite_height/5,"Tiros",obj_tiro_player);
+	instance_create_layer(x - sprite_width/3,y - sprite_height/5,"Tiros",obj_tiro_player);
+}
+//Disparo triplo
+disparotriplo = function()
+{
+	disparosimples();
+	disparoduplo();
+}
+//Criando sistema de disparo
+disparo = function()
+{
+	if global.disparo = 2
+	{
+	disparotriplo();
+	}
+	else if global.disparo = 1
+	{
+	disparoduplo();
+	}
+	else
+	{
+	disparosimples();
+	}
+}
+
 //Criando função "Atirando"
 atirando = function()
 {
 var	fire = keyboard_check_pressed(vk_space);
 	if fire
 		{
-		instance_create_layer(x + sprite_width/3,y - sprite_height/5,"Tiros",obj_tiro_player);
-		instance_create_layer(x - sprite_width/3,y - sprite_height/5,"Tiros",obj_tiro_player);
+		disparo();
 		}	
 }
 //Criando função de movimentação do player

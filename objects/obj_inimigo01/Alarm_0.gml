@@ -1,4 +1,4 @@
 /// @description Executando disparos
 inimigo_tiro();
 //Disparando novamente
-alarm[0] = room_speed * 1.5;
+alarm[0] = choose(45,60,90);

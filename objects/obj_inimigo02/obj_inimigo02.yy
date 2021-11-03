@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_tiro_brilho_inimigo",
-    "path": "sprites/spr_tiro_brilho_inimigo/spr_tiro_brilho_inimigo.yy",
+    "name": "spr_inimigo02",
+    "path": "sprites/spr_inimigo02/spr_inimigo02.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_inimigo01",
+    "path": "objects/obj_inimigo01/obj_inimigo01.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,17 +25,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Inimigos",
+    "path": "folders/Objects/Inimigos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_controlador",
+  "name": "obj_inimigo02",
   "tags": [],
   "resourceType": "GMObject",
 }

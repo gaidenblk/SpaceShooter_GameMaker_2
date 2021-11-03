@@ -4,7 +4,7 @@
     "path": "folders/Notes.yy",
   },
   "resourceVersion": "1.1",
-  "name": "Notas de Criação",
+  "name": "Notas de Criacao",
   "tags": [],
   "resourceType": "GMNotes",
 }

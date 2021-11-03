@@ -68,3 +68,9 @@
 		9.4.5 - Criar a variável de cores - FEITO
 	
 10 - Criando o Background do nosso jogo - FEITO
+
+11 - Criando segundo inimigo
+	11.1 - Criando a Sprite
+	11.2 - Criando o objeto
+	11.3 - Fazendo o inimigo 2 herdar comportamentos do inimigo 1
+	11.4 - Fazendo ele mudar de direção ao chegar no meio da room
