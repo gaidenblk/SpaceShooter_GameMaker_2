@@ -10,8 +10,8 @@ disparosimples = function()
 //Disparo duplo
 disparoduplo = function()
 {
-	instance_create_layer(x + sprite_width/3,y - sprite_height/5,"Tiros",obj_tiro_player);
-	instance_create_layer(x - sprite_width/3,y - sprite_height/5,"Tiros",obj_tiro_player);
+	instance_create_layer(x + sprite_width/2.5,y - sprite_height/5,"Tiros",obj_tiro_player);
+	instance_create_layer(x - sprite_width/2.5,y - sprite_height/5,"Tiros",obj_tiro_player);
 }
 //Disparo triplo
 disparotriplo = function()
@@ -20,13 +20,31 @@ disparotriplo = function()
 	disparoduplo();
 }
 //Criando sistema de disparo
-disparo = function()
+//Testando configurações de disparo
+disparo = 0;
+//Botões de disparo 1,2,3
+disparoteste = function()
 {
-	if global.disparo = 2
+	if keyboard_check_pressed(ord("1"))
+	{
+		disparo = 0
+	}
+	if keyboard_check_pressed(ord("2"))
+	{
+		disparo = 1
+	}
+	if keyboard_check_pressed(ord("3"))
+	{
+		disparo = 2
+	}
+}
+disparofire = function()
+{
+	if disparo = 2
 	{
 	disparotriplo();
 	}
-	else if global.disparo = 1
+	else if disparo = 1
 	{
 	disparoduplo();
 	}
@@ -35,14 +53,13 @@ disparo = function()
 	disparosimples();
 	}
 }
-
 //Criando função "Atirando"
 atirando = function()
 {
 var	fire = keyboard_check_pressed(vk_space);
 	if fire
 		{
-		disparo();
+		disparofire();
 		}	
 }
 //Criando função de movimentação do player
@@ -52,6 +69,20 @@ movimenta = function()
 	down = keyboard_check(ord("S")) || keyboard_check(vk_down);
 	left = keyboard_check(ord("A")) || keyboard_check(vk_left);
 	right = keyboard_check(ord("D")) || keyboard_check(vk_right);	
+}
+//Speedboost
+spd_boost = function()
+{
+	var spdbst;
+	spdbst = keyboard_check(vk_shift);
+	if spdbst
+	{
+	velocidade = 8;	
+	}
+	else
+	{
+	velocidade = 5;	
+	}
 }
 //Limitando o player dentro da tela
 limitedatela = function()
