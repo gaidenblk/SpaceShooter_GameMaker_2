@@ -70,7 +70,25 @@
 10 - Criando o Background do nosso jogo - FEITO
 
 11 - Criando segundo inimigo
-	11.1 - Criando a Sprite
-	11.2 - Criando o objeto
-	11.3 - Fazendo o inimigo 2 herdar comportamentos do inimigo 1
-	11.4 - Fazendo ele mudar de direção ao chegar no meio da room
+	11.1 - Criando a Sprite - FEITO
+	11.2 - Criando o objeto - FEITO
+	11.3 - Fazendo o inimigo 2 herdar comportamentos do inimigo 1 - FEITO
+	11.4 - Fazendo ele mudar de direção ao chegar no meio da room - FEITO
+		11.4.1 - Checando do que lado da room eu estou - FEITO
+			11.4.1.1 - Falando se ele está na direita - FEITO
+			11.4.1.2 - Falando se ele está na esquerda - FEITO
+	11.5 - Fazer ele mudar de direção se ele ja passou de 1/3 da tela - FEITO
+	11.6 - Quero que ele faça isso apenas uma vez - FEITO
+	11.7 - Fazendo o inimigo criar o proprio tiro
+		11.7.1 - Criar a função atirando do inimigo 2
+				
+12 - Criando o segundo tiro do inimigo 2
+	12.1 - Importando a sprite - FEITO
+	12.2 - Criando o objeto dele - FEITO
+	12.3 - Fazendo ele ser filho do tiro 1 - FEITO
+	12.4 - Indo na direção do player - FEITO
+	12.5 - Apontando para a direção do player - FEITO
+		12.5.1 - Fazer ela ganhar 90° - FEITO
+	12.6 - Indo para a direção do player APENAS se o player existir
+	
+	

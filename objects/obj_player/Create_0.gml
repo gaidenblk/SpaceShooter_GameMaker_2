@@ -22,6 +22,7 @@ disparotriplo = function()
 //Criando sistema de disparo
 //Testando configurações de disparo
 disparo = 0;
+disparotrg = true;
 //Botões de disparo 1,2,3
 disparoteste = function()
 {

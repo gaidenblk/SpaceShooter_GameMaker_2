@@ -6,7 +6,7 @@ vspeed = 3;
 //Fazendo o inimigo atirar SE estiver dentro da tela
 inimigo_tiro = function()
 {
-if x > 0
+if y > 0
 	{
 	instance_create_layer(x,y + sprite_height/3,"Tiros",obj_inimigo_tiro01);
 	}	
