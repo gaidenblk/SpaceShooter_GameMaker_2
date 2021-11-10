@@ -3,10 +3,6 @@
 movimenta();
 spd_boost();
 
-//Movimentação
-y += (down - up) * velocidade;
-x += (right - left) * velocidade;
-
 //Mantendo player nos limites da tela
 limitedatela();
 

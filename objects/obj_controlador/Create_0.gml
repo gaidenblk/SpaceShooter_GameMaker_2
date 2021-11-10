@@ -1,14 +1,20 @@
 /// @description Iniciando variáveis
-//Base do disparo
-global.disparo = 0
+//Definindo quantidade temporaria de inimigos
+qtd_inm01 = 0;
+qtd_inm02 = 0;
+
 //Função de spawn inimigo 01
 inimigo1 = function()
 {
-instance_create_layer(x_pos1,-40,"Inimigos",obj_inimigo01);	
+	var x_pos = irandom_range(20,room_width-20);
+	instance_create_layer(x_pos,-40,"Inimigos",obj_inimigo01);
+	qtd_inm01++;
 }
 //Função de spawn inimigo 02
 inimigo2 = function()
 {
-instance_create_layer(x_pos2,-40,"Inimigos",obj_inimigo02);	
+	var x_pos = irandom_range(20,room_width-20);
+	instance_create_layer(x_pos,-40,"Inimigos",obj_inimigo02);	
+	qtd_inm02++;
 }
 alarm[0] = 30;

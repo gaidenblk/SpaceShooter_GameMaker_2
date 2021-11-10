@@ -1,6 +1,7 @@
 /// @description Iniciando variáveis
 //Velocidade base do player
 velocidade = 5;
+//Criando sistema de disparo
 //Tipos de disparo
 //Disparo simples
 disparosimples = function()
@@ -19,11 +20,11 @@ disparotriplo = function()
 	disparosimples();
 	disparoduplo();
 }
-//Criando sistema de disparo
-//Testando configurações de disparo
+//Testando configurações de disparo e limite de tiros por vez
 disparo = 0;
 disparotrg = true;
-//Botões de disparo 1,2,3
+dspr_qtd = 0;
+//Disparoteste seta os botões de disparo 1,2,3
 disparoteste = function()
 {
 	if keyboard_check_pressed(ord("1"))
@@ -39,6 +40,7 @@ disparoteste = function()
 		disparo = 2
 	}
 }
+//Disparofire é a referencia de qual disparo será feita pela func atirando
 disparofire = function()
 {
 	if disparo = 2
@@ -54,22 +56,28 @@ disparofire = function()
 	disparosimples();
 	}
 }
-//Criando função "Atirando"
+//Definindo func atirando e condicionando a 3 tiros > vide Alarm[0] event
 atirando = function()
 {
-var	fire = keyboard_check_pressed(vk_space);
-	if fire
+	var	fire = keyboard_check(vk_space);
+	if fire && disparotrg
 		{
 		disparofire();
+		disparotrg = false;
+		dspr_qtd++;
+		alarm[0] = room_speed/7;
 		}	
 }
 //Criando função de movimentação do player
 movimenta = function()
 {
+	var up, down, left, right;
 	up = keyboard_check(ord("W")) || keyboard_check(vk_up);
 	down = keyboard_check(ord("S")) || keyboard_check(vk_down);
 	left = keyboard_check(ord("A")) || keyboard_check(vk_left);
-	right = keyboard_check(ord("D")) || keyboard_check(vk_right);	
+	right = keyboard_check(ord("D")) || keyboard_check(vk_right);
+	y += (down - up) * velocidade;
+	x += (right - left) * velocidade;
 }
 //Speedboost
 spd_boost = function()
