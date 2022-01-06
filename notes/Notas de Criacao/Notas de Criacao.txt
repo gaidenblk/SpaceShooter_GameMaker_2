@@ -91,4 +91,8 @@
 		12.5.1 - Fazer ela ganhar 90° - FEITO
 	12.6 - Indo para a direção do player APENAS se o player existir
 	
-	
+13 - Criação procedural dos inimigos
+	13.1 - Fazendo com que o objeto Control crie inimigos de tempo em tempo
+		13.1.1 - Fazendo com que a posição X e Y dos inimigos criados seja aleatória
+		
+14 - Criando o objeto controlador do jogo

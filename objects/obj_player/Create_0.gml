@@ -66,6 +66,7 @@ atirando = function()
 		disparotrg = false;
 		dspr_qtd++;
 		alarm[0] = room_speed/7;
+		alarm[1] = room_speed*0.7;
 		}	
 }
 //Criando função de movimentação do player
