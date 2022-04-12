@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tiro_impacto","path":"sprites/spr_tiro_impacto/spr_tiro_impacto.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tiro_impacto",
     "tags": [],
     "resourceType": "GMSequence",

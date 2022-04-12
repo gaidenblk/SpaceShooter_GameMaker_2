@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inimigo01","path":"sprites/spr_inimigo01/spr_inimigo01.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_inimigo01",
     "tags": [],
     "resourceType": "GMSequence",

@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_explosao","path":"sprites/spr_explosao/spr_explosao.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_explosao",
     "tags": [],
     "resourceType": "GMSequence",

@@ -96,3 +96,6 @@
 		13.1.1 - Fazendo com que a posição X e Y dos inimigos criados seja aleatória
 		
 14 - Criando o objeto controlador do jogo
+	14.1 - Ganhando pontos ao destruir o inimigo
+	
+15 - Criando o sistema de pontos

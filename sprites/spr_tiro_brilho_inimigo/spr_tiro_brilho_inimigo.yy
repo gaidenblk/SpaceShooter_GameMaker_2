@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tiro_brilho_inimigo","path":"sprites/spr_tiro_brilho_inimigo/spr_tiro_brilho_inimigo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tiro_brilho_inimigo",
     "tags": [],
     "resourceType": "GMSequence",

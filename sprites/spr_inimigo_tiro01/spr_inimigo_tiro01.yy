@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inimigo_tiro01","path":"sprites/spr_inimigo_tiro01/spr_inimigo_tiro01.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_inimigo_tiro01",
     "tags": [],
     "resourceType": "GMSequence",
