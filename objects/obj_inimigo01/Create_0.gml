@@ -2,6 +2,9 @@
 //Fazendo o Inimigo ir pra baixo
 vspeed = 3;
 
+//Definindo valor de ponto do inimigo
+ponto = 10;
+
 //Criando função atirando
 //Fazendo o inimigo atirar SE estiver dentro da tela
 inimigo_tiro = function()

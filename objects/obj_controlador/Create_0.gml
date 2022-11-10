@@ -21,4 +21,14 @@ inimigo2 = function()
 	instance_create_layer(x_pos,y_pos,"Inimigos",obj_inimigo02);	
 	qtd_inm02++;
 }
+//Setando Alarm do Spawn
 alarm[0] = 30;
+
+//Criando esquema de pontos
+pontos = 0;
+
+///@method ganha_pontos(pontos)
+ganha_pontos = function(_pontos)
+{
+	pontos += _pontos;	
+}

@@ -99,3 +99,9 @@
 	14.1 - Ganhando pontos ao destruir o inimigo
 	
 15 - Criando o sistema de pontos
+	15.1 - Iniciando variável pontos - FEITO
+	15.2 - Ganhando pontos ao destruir inimigos - FEITO
+	15.3 - Rodando o metodo de ganhar pontos APENAS se a instância do objeto Controlador estiver existindo - FEITO
+	15.4 - Fazendo com que inimigos diferentes me façam ganhar pontos diferentes - FEITO
+	15.5 - Criando uma variável nos inimigos chamada pontos e ela vai ter um valor para cada um - FEITO
+	

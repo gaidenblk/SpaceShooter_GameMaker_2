@@ -2,6 +2,9 @@
 // Inherit the parent event
 event_inherited();
 
+//Definindo valor de ponto do inimigo
+ponto = 25;
+
 //Mudando de direção
 //Indo para um dos lados
 movimentacao = function()
