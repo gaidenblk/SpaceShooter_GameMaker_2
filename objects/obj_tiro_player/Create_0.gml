@@ -5,3 +5,6 @@ image_xscale = 3;
 image_yscale = 3;
 //Ajustando esquema de disparo
 x_pos = obj_player.x;
+
+//Determinando valor de dano
+dspr_dano = 1;

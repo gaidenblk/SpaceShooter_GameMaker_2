@@ -105,3 +105,7 @@
 	15.4 - Fazendo com que inimigos diferentes me façam ganhar pontos diferentes - FEITO
 	15.5 - Criando uma variável nos inimigos chamada pontos e ela vai ter um valor para cada um - FEITO
 	
+16 - Criando sistema de level
+	16.1 - Iniciando variável Level - FEITO
+	16.2 - Exibindo variável Level - FEITO
+	16.3 - Ganhando level ao alcancar quantidade de pontos

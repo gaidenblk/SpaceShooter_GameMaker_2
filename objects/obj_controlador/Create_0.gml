@@ -27,8 +27,19 @@ alarm[0] = 30;
 //Criando esquema de pontos
 pontos = 0;
 
+//Iniciando Sistema de level
+level = 1;
+
 ///@method ganha_pontos(pontos)
 ganha_pontos = function(_pontos)
 {
 	pontos += _pontos;	
+	
+	//Subindo de Level
+	if pontos >= level * 20
+	{
+		//Elevando level e criando loop
+		level++
+	
+	}
 }
