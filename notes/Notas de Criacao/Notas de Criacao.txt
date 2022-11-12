@@ -92,9 +92,11 @@
 	12.6 - Indo para a direção do player APENAS se o player existir
 	
 13 - Criação procedural dos inimigos
-	13.1 - Fazendo com que o objeto Control crie inimigos de tempo em tempo
-		13.1.1 - Fazendo com que a posição X e Y dos inimigos criados seja aleatória
-		
+	13.1 - Fazendo com que o objeto Control crie inimigos de tempo em tempo - FEITO
+		13.1.1 - Fazendo com que a posição X e Y dos inimigos criados seja aleatória - FEITO
+	13.2 - Criando inimigos diferentes com base no level - FEITO
+	13.3 - Criando ONDAS de inimigos
+	
 14 - Criando o objeto controlador do jogo
 	14.1 - Ganhando pontos ao destruir o inimigo
 	
