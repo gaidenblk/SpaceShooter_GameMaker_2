@@ -17,5 +17,14 @@ if y > 0
 	instance_create_layer(x,y + sprite_height/3,"Tiros",obj_inimigo_tiro01);
 	}	
 }
+
+//Impedindo inimigos de spawnar um em cima do outro
+if place_meeting(x,y,obj_inimigo01)
+{
+	//Sem executar evendo Destroy
+	instance_destroy(id,false);	
+}
+
+
 //Acionando o alarm para disparo
 alarm[0] = room_speed/2;
