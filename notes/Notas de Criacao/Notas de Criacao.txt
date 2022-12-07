@@ -98,7 +98,7 @@
 	13.3 - Criando ONDAS de inimigos - FEITO
 	13.4 - Criar ondas apenas se não tiver mais inimigos no jogo - FEITO
 	13.5 - Criar quantidade de inimigos baseado no LV - FEITO
-	13.6 - Impedindo que inimigos sejam criados um em cima do outro - 
+	13.6 - Impedindo que inimigos sejam criados um em cima do outro - FEITO
 	
 14 - Criando o objeto controlador do jogo
 	14.1 - Ganhando pontos ao destruir o inimigo
@@ -114,3 +114,29 @@
 	16.1 - Iniciando variável Level - FEITO
 	16.2 - Exibindo variável Level - FEITO
 	16.3 - Ganhando level ao alcancar quantidade de pontos
+	
+17 - Deixar os tiros do player "automatico" - FEITO
+	17.1 - Criando evento para o disparo - FEITO
+	
+18 - Dando levels para os tiros do player
+	18.1 - Criando sistema de levels - FEITO
+	18.2 - criando o sistema de debug dos levels - FEITO
+
+19 - Criando o segundo tiro do player - FEITO
+	19.1 - Importando a sprite - FEITO
+	19.2 - Criando o objeto Tiro2 - FEITO
+	19.3 - Falar que esse tiro é filho do tiro1 - FEITO
+	19.4 - Ajustando os efeitos do tiro 2 - FEITO
+	19.5 - Fazendo 2 tiros por vez - FEITO
+	19.6 - Fazendo o tiro mudar de direção - FEITO
+		19.6.1 - Fazendo o tiro ganhar uam direção - FEITO
+		19.6.2 - Fazendo o tiro inverter a direção horizontal - FEITO
+	19.7 - Criando os Levels dos tiros - FEITO
+		19.7.1 - Fazendo o terceiro level do tiro - FEITO
+		19.7.2 - Fazendo o quarto level do tiro - FEITO
+		19.7.3 - Fazendo o quinto level do tiro - FEITO		
+
+20 - Fazendo o player ganhar power ups
+	20.1 - Criando a sprite do power up
+	20.2 - Criando o objeto do power up
+	

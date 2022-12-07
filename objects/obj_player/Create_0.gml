@@ -2,8 +2,11 @@
 //Velocidade base do player
 velocidade = 5;
 //Criando sistema de disparo
-//Tipos de disparo
-//Disparo simples
+//Velocidade de repeticao do disparo
+dspr_repet = 6;
+
+//Tipos de disparo por level
+//Disparo simples - Tiro1
 disparosimples = function()
 {
 	instance_create_layer(x,y - sprite_height/2,"Tiros",obj_tiro_player);	
@@ -20,42 +23,92 @@ disparotriplo = function()
 	disparosimples();
 	disparoduplo();
 }
+
+//Disparo simples - Tiro2
+disparosimples2 = function()
+{
+	instance_create_layer(x,y - sprite_height/2,"Tiros",obj_tiro_player2);	
+	instance_create_layer(x + sprite_width/2.5,y - sprite_height/5,"Tiros",obj_tiro_player);
+	instance_create_layer(x - sprite_width/2.5,y - sprite_height/5,"Tiros",obj_tiro_player);
+}
+//Disparo duplo
+disparoduplo2 = function()
+{
+	instance_create_layer(x + sprite_width/5,y - sprite_height/5,"Tiros",obj_tiro_player2);
+	instance_create_layer(x - sprite_width/5,y - sprite_height/5,"Tiros",obj_tiro_player2);
+	instance_create_layer(x + sprite_width,y - sprite_height/9,"Tiros",obj_tiro_player);
+	instance_create_layer(x - sprite_width,y - sprite_height/9,"Tiros",obj_tiro_player);
+}
+//Disparo triplo
+disparotriplo2 = function()
+{
+	disparosimples2();
+	disparoduplo2();
+}
+
 //Testando configurações de disparo e limite de tiros por vez
-disparo = 0;
+dspr_level = 1;
 disparotrg = true;
 dspr_qtd = 0;
-//Disparoteste seta os botões de disparo 1,2,3
+
+//Metodo de evolucao de disparo por level
+//Debug no momento
+dspr_pow = function()
+{
+	if keyboard_check_pressed(ord("1")) && dspr_level <6
+	{
+		dspr_level++;
+	}
+	if keyboard_check_pressed(ord("2")) && dspr_level >1
+	{
+		dspr_level--;
+	}		
+}
+
+//Metodo de aumento de cadencia de disparo
+//Debug "disparoteste"
+//Disparoteste seta os botões de disparo 1,2,3 - Config pra debug
 disparoteste = function()
 {
-	if keyboard_check_pressed(ord("1"))
+	if keyboard_check_pressed(ord("3")) && dspr_repet > 3
 	{
-		disparo = 0
+		dspr_repet--;
 	}
-	if keyboard_check_pressed(ord("2"))
+	if keyboard_check_pressed(ord("4")) && dspr_repet < 6
 	{
-		disparo = 1
-	}
-	if keyboard_check_pressed(ord("3"))
-	{
-		disparo = 2
+		dspr_repet++;
 	}
 }
 //Disparofire é a referencia de qual disparo será feita pela func atirando
 disparofire = function()
 {
-	if disparo = 2
+	if dspr_level == 6
 	{
-	disparotriplo();
+		disparotriplo2();
 	}
-	else if disparo = 1
+	else if dspr_level == 5
 	{
-	disparoduplo();
+		disparoduplo2();
 	}
-	else
+	else if dspr_level == 4
 	{
-	disparosimples();
+		disparosimples2();
+	}
+	else if dspr_level == 3
+	{
+		disparotriplo();
+	}
+	else if dspr_level == 2
+	{
+		disparoduplo();
+	}
+	else if dspr_level == 1
+	{
+		disparosimples();
 	}
 }
+
+//Disparando - 
 //Definindo func atirando e condicionando a 3 tiros > vide Alarm[0] event
 atirando = function()
 {
@@ -65,8 +118,8 @@ atirando = function()
 		disparofire();
 		disparotrg = false;
 		dspr_qtd++;
-		alarm[0] = room_speed/7;
-		alarm[1] = room_speed*0.7;
+		//Aqui é definido a velocidade de repeticao
+		alarm[0] = dspr_repet;
 		}	
 }
 //Criando função de movimentação do player
@@ -87,7 +140,7 @@ spd_boost = function()
 	spdbst = keyboard_check(vk_shift);
 	if spdbst
 	{
-	velocidade = 8;	
+	velocidade = lerp(5,10,1.5)	
 	}
 	else
 	{
