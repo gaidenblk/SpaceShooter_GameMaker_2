@@ -137,6 +137,17 @@
 		19.7.3 - Fazendo o quinto level do tiro - FEITO		
 
 20 - Fazendo o player ganhar power ups
-	20.1 - Criando a sprite do power up
-	20.2 - Criando o objeto do power up
+	20.1 - Criando a sprite do power up - FEITO
+	20.2 - Criando o objeto do power up - FEITO
+	20.3 - Criar a chance de cada power up - FEITO
+	20.4 - Criar o metodo power up no player - FEITO
+	20.5 - Fazer o item colidir com o player e dar o power up para ele - FEITO
+	20.6 - Destruir o item ao colidir com o player - FEITO
+	20.7 - Criando o impacto do tiro ao ser destruido - FEITO
+	20.8 - Fazendo os inimigos terem uma chance de dropar o power up - FEITO
+	20.9 - Fazendo o powerup se mover ao dropar - FEITO
+	20.10 - Dando um efeito a mais nele - FEITO
+		20.10.1 - Escolhendo a cor com base no tipo de power UP - FEITO
+	20.11 - Impedindo que o powerup saia da tela - FEITO
+	20.12 - Fazendo o powerup sumir sozinho - 
 	

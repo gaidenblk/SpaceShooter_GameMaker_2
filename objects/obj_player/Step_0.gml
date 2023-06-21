@@ -1,18 +1,20 @@
 /// @description Propriedades do player
 //Criando a movimentação do player
 movimenta();
-spd_boost();
-
-//Mantendo player nos limites da tela
-limitedatela();
-
-//Cadencia de disparos
-disparoteste();
 
 //Atirando
 atirando();
 
-//Elevando nivel do tiro
-dspr_pow();
-//Verificando função de disparo botões
-//disparoteste();
+if keyboard_check_pressed(vk_up) && level_tiro < 5
+{
+	level_tiro++;	
+}
+if keyboard_check_pressed(vk_down) && level_tiro > 1
+{
+	level_tiro--;	
+}
+
+
+//Mantendo player nos limites da tela
+limitedatela();
+

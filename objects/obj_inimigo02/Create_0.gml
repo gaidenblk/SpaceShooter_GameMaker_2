@@ -8,6 +8,9 @@ ponto = 25;
 //Definindo vida do inimigo 2
 inimigo_vida = 2;
 
+//Chance de drop de item
+chance = 35;
+
 //Mudando de direção
 //Indo para um dos lados
 movimentacao = function()

@@ -8,3 +8,5 @@ if instance_exists(obj_controlador)
 	obj_controlador.ganha_pontos(ponto);
 }
 
+//Dropando o item
+dropa_item(chance);
