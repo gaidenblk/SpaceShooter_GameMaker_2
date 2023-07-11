@@ -5,5 +5,5 @@ draw_self();
 
 //Fazendo o efeito
 gpu_set_blendmode(bm_add);
-draw_sprite_ext(sprite_index, image_index, x, y, image_xscale + .2, image_yscale + .2, image_angle,cores, image_alpha - 0.3);
+draw_sprite_ext(sprite_index, image_index, x, y, image_xscale + .2, image_yscale + .2, image_angle,cores,image_alpha - 0.3);
 gpu_set_blendmode(bm_normal);

@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
-    {"name":"spr_escudo","order":8,"path":"sprites/spr_escudo/spr_escudo.yy",},
+    {"name":"spr_escudo","order":3,"path":"sprites/spr_escudo/spr_escudo.yy",},
     {"name":"spr_tiro_player","order":1,"path":"sprites/spr_tiro_player/spr_tiro_player.yy",},
     {"name":"obj_powerup","order":2,"path":"objects/obj_powerup/obj_powerup.yy",},
     {"name":"spr_tiro_brilho","order":5,"path":"sprites/spr_tiro_brilho/spr_tiro_brilho.yy",},

@@ -149,5 +149,36 @@
 	20.10 - Dando um efeito a mais nele - FEITO
 		20.10.1 - Escolhendo a cor com base no tipo de power UP - FEITO
 	20.11 - Impedindo que o powerup saia da tela - FEITO
-	20.12 - Fazendo o powerup sumir sozinho - 
+	20.12 - Fazendo o powerup sumir sozinho - FEITO
+	
+21 - Escudo do player - FEITO
+	21.1 - Importar a Sprite - FEITO
+	21.2 - Criar o Objeto - FEITO
+	21.3 - Fazendo o Player criar o escudo ao apertar a tecla "E" - FEITO
+	21.4 - Criar uma Layer para o escudo - FEITO
+	21.5 - Fazendo o Escudo ficar na mesma posição - FEITO
+		21.5.1 - Corrigindo o delay no movimento - FEITO
+	21.6 - Destruindo os tiros e os inimigos - FEITO
+	21.7 - Deixando o escudo um pouco maior - FEITO
+	21.8 - Animando o escudo - FEITO
+		21.8.1 - Parar a animação no final dela - FEITO
+		21.8.2 - Depois de um tempo voltar a imagem - FEITO
+			21.8.2.1 - Ao final da animação ativar um alarm - FEITO
+			21.8.2.2 - Quando chegar no image_index 0 eu me destruo - FEITO
+	21.9 - Melhorando o efeito do escudo - FEITO
+		21.9.1 - Dando uma transparência para o escudo - FEITO
+		21.9.1 - Dando o blendmode para ele - FEITO
+
+22 - Ajustes Gerais - FEITO
+	22.1 - Arrumando as máscaras de colisão - FEITO
+	22.2 - Dando colisão entre o player e os inimigos - FEITO
+
+23 - Fazendo o Player morrer
+	23.1 - Dando vida ao player - FEITO
+	23.2 - Criando o metodo de perder vida - FEITO
+	23.3 - Fazendo ele morrer SE a vida for menor do que 1 - FEITO
+	23.4 - Fazendo o player fazer a explosão - FEITO
+	
+		
+	
 	

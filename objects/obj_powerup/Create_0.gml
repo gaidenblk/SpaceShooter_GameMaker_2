@@ -4,11 +4,11 @@
 //Determinando probabilidade e cada powerup
 chance = random(100);
 //Cor do tiro
-if chance > 90
+if chance >= 90
 {
 	cores = c_red;	
 }
-else if chance > 45
+else if chance >= 45
 {
 	cores = c_blue;	
 }
@@ -21,3 +21,5 @@ else
 speed = 2;
 direction = irandom(359);
 
+//Iniciando Alarm de desvanecimento
+alarm[0] = 60;

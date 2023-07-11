@@ -1,3 +1,5 @@
 /// @description Destruindo ao contato
 instance_destroy();
-instance_destroy(other);
+
+//Matando o player ao contato
+other.perde_vida();

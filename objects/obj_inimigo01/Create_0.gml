@@ -27,14 +27,14 @@ if place_meeting(x,y,obj_inimigo01)
 }
 
 //Drop de ITEM
-dropa_item = function(chance)
+dropa_item = function(_chance)
 {
 	var valor = random(100);
 	
 	//Se o valor for menor que a chance ele cria o item
-	if valor < chance
+	if valor < _chance
 	{
-	instance_create_layer(x,y,"Tiros",obj_powerup);
+		instance_create_layer(x,y,"Tiros",obj_powerup);
 	}
 }
 
