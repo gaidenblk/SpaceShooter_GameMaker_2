@@ -3,10 +3,10 @@
 instance_create_layer(x,y,"Inimigos",obj_explosao);
 
 //Determinando o ganho de pontos
-if instance_exists(obj_controlador)
-{
-	obj_controlador.ganha_pontos(ponto);
-}
+ganhando_pontos(ponto);
 
 //Dropando o item
 dropa_item(chance);
+
+//Screenshake
+screenshake(shake);

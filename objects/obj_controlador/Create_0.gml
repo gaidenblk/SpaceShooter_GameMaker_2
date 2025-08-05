@@ -1,4 +1,15 @@
 /// @description Iniciando variáveis
+//Aleatorizando o jogo
+randomize();
+
+//Setando Alarm do Spawn
+alarm[0] = 30;
+
+//Criando esquema de pontos
+pontos = 0;
+
+//Iniciando Sistema de level
+level = 1;
 
 //Função de spawn inimigo 01
 inimigo = function()
@@ -15,20 +26,13 @@ inimigo = function()
 	
 	//Determinando area de spawn do inimigo
 	var x_pos, y_pos;
-	y_pos = irandom_range(-40,-70);
+	y_pos = irandom_range(-40,-250 - (100 * level));
 	x_pos = irandom_range(20,room_width-20);
-	instance_create_layer(x_pos,y_pos,"Inimigos",inimigo_x);
-	
+	instance_create_layer(x_pos,y_pos,"Inimigos",inimigo_x);	
 }
 
-//Setando Alarm do Spawn
-alarm[0] = 30;
-
-//Criando esquema de pontos
-pontos = 0;
-
-//Iniciando Sistema de level
-level = 1;
+//Criando variavel de controle para sequence de gameover
+gameover_seq = noone;
 
 ///@method ganha_pontos(pontos)
 ganha_pontos = function(_pontos)

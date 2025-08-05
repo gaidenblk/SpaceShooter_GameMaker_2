@@ -8,6 +8,8 @@ ponto = 10;
 inimigo_vida = 1;
 //Chance do inimigo dropar o item
 chance = 20;
+//Quantidade de Shake
+shake = 7;
 
 //Criando função atirando
 //Fazendo o inimigo atirar SE estiver dentro da tela
@@ -32,7 +34,8 @@ dropa_item = function(_chance)
 	var valor = random(100);
 	
 	//Se o valor for menor que a chance ele cria o item
-	if valor < _chance
+	//E se o inimigo estiver um pouco abaixo do limite superior da tela
+	if valor < _chance && y > 60
 	{
 		instance_create_layer(x,y,"Tiros",obj_powerup);
 	}

@@ -2,11 +2,15 @@
 //Vidas iniciais do player
 vida = 3;
 
+//Quantidade de escudos iniciais
+qtd_escudo = 3;
+
 //Velocidade base do player
 velocidade = 5;
 
-//Taxa de disparos
-espera_tiro = 10;
+//Variaveis do modo de disparo sequencial e por quantidade
+espera_tiro = 0;
+delay_tiro = 10;
 qtd_tiros = 0;
 qtd_tiros_max = 3;
 
@@ -20,23 +24,9 @@ qualotiro = "nenhum";
 limitedatela = function()
 {
 	//Vertical
-	if y > 1080 - sprite_height/2
-	{
-		y = 1080 - sprite_height/2;
-	}
-	if y < 0 + sprite_height/2
-	{
-		y = 0 + sprite_height/2;
-	}
+	y = clamp(y, 0 + sprite_height/2, room_height - sprite_height/2)
 	//Horizontal
-	if x > 1920 - sprite_height/2
-	{
-		x = 1920 - sprite_width/2;
-	}
-	if x < 0 + sprite_width/2
-	{
-		x = 0 + sprite_width/2;
-	}	
+	x = clamp(x, 0 + sprite_width/2, room_width - sprite_width/2)
 }
 
 //Criando função de movimentação do player
@@ -55,7 +45,8 @@ movimenta = function()
 escudo = function()
 {
 	//Criando o escudo somente se ele não existe
-	if !instance_exists(obj_escudo)
+	//E quando a quantidade for maior que 0
+	if !instance_exists(obj_escudo) && qtd_escudo > 0
 	{
 		var _ativar = keyboard_check_pressed(ord("E"))	
 		if _ativar
@@ -63,6 +54,7 @@ escudo = function()
 			//Aqui eu gero a criação do escudo e seto qual o id do alvo a ser criado e seguido
 			var _escudo = instance_create_layer(x, y, "Escudo", obj_escudo)	
 			_escudo.alvo = id;
+			qtd_escudo--;
 		}
 	}
 }
@@ -70,13 +62,26 @@ escudo = function()
 //Criando o método de disparo
 atirando = function()
 {
+	//Resfriando o tempo de disparo
+	espera_tiro--;
+	espera_tiro = clamp(espera_tiro,-1,30);
+	
 	var fire = keyboard_check(vk_space);
-	if fire && alarm[0] == -1
+	if fire && espera_tiro <= 0
 	{
-		var _tiro1, _tiro2;
-		//Ajustando frequencia de disparo pelo Alarm[0]
-		alarm[0] = espera_tiro;
+		//Ajustando frequencia de disparo pelo quantidade
 		qtd_tiros++
+		//Setando delay de disparo
+		if qtd_tiros >= qtd_tiros_max
+		{
+			espera_tiro = delay_tiro * 2;	
+			qtd_tiros = 0;
+		}else
+		{
+			espera_tiro = delay_tiro;
+		}
+		
+		var _tiro1, _tiro2;
 		
 		//Desenhando os disparos na nave
 		//Tiro Level 1
@@ -142,16 +147,21 @@ tiro4 = function()
 }
 
 //Power UPGRADE
-///@method level_up(chance)
-level_up = function(_chance)
+///@method power_up(chance)
+power_up = function(_chance)
 {
 	if _chance >= 90
 	{
+		qtd_tiros_max++;
 		if level_tiro < 5
 		{
 			level_tiro++;
-			qtd_tiros_max++;
 		}
+		else
+		{
+			ganhando_pontos(100);
+		}
+		
 	}
 	else if _chance >= 45
 	{
@@ -159,12 +169,20 @@ level_up = function(_chance)
 		{
 			velocidade += 0.5;
 		}
+		else
+		{
+			ganhando_pontos(25);
+		}
 	}
 	else
 	{
 		if espera_tiro > 3
 		{
-			espera_tiro--;
+			delay_tiro--
+		}
+		else
+		{
+			ganhando_pontos(10);
 		}
 	}
 }
@@ -176,9 +194,11 @@ perde_vida = function()
 	if vida > 1
 	{
 		vida--;
+		screenshake(5);
 	}
 	else
 	{
 		instance_destroy();
+		screenshake(25);
 	}
 }

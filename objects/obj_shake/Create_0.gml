@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Screenshake!
 // You can write your code in this editor
-
+shake = 10;
 

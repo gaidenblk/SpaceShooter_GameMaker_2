@@ -168,6 +168,10 @@
 	21.9 - Melhorando o efeito do escudo - FEITO
 		21.9.1 - Dando uma transparência para o escudo - FEITO
 		21.9.1 - Dando o blendmode para ele - FEITO
+	21.10 - Limitando a quantidade de escudos - FEITO
+		21.10.1 - Criando a variavel da quantidade de escudo - FEITO
+		21.10.2 - Fazendo o player só poder criar escudo quando a quantidade for maior do que 0 - FEITO
+	21.11 - Exibindo os escudos na tela	- FEITO
 
 22 - Ajustes Gerais - FEITO
 	22.1 - Arrumando as máscaras de colisão - FEITO
@@ -178,7 +182,43 @@
 	23.2 - Criando o metodo de perder vida - FEITO
 	23.3 - Fazendo ele morrer SE a vida for menor do que 1 - FEITO
 	23.4 - Fazendo o player fazer a explosão - FEITO
-	
+	23.5 - Exibindo a vida do player - FEITO
+	23.6 - Fazendo o player perder vida ao trombar como o inimigo
+	23.7 - Criando uma tela de game over, quando o jogador perder
+		23.7.1 - Criando a sequencia de game over - FEITO
+		23.7.2 - Instanciando a sequencia de game over na room - FEITO
+			23.7.2.1 - Checando se o player existe pelo objeto control - FEITO
+			23.7.2.2 - Se o player não existir enão eu crio a sequence de game over - FEITO
+		23.7.3 - Reiniciando ao apertar ENTER - FEITO
 		
+24 - ScreenShake
+	24.1 - Criar um objeto para fazer o ScreenShake - FEITO
+	24.2 - Fazendo tremer - FEITO
+	24.3 - Enfraquecendo o Screenshake - FEITO
+	24.4 - Destruindo screenshake depois de um tempo - FEITO
+	24.5 - Garantindo que a view esteja no lugar - FEITO
+	24.6 - Criando o screenshake sempre que um inimigo for destruido - FEITO
+	24.7 - Criando um script do screenshake para que todos possam usar ter ter seus proprios parametros - FEITO
+	24.8 - Criando o screenshake sempre que player tomar dano - FEITO
+	
+25 - Ajustes Gerais
+	25.1 - Randomizando o jogo - FEITO
+	25.2 - Impedindo o player de sair da tela - FEITO
+	25.3 - Fazendo os inimigos droparem o item depois de certa posição - FEITO
+	25.4 - Melhorando o sistema de ganhar level - FEITO
+	25.5 - Ganhar pontos caso o player pegue o power up do tiro e já esteja no level maximo - FEITO
+
+26 - BOSS!
+	26.1 - Importando as sprites do Boss! - FEITO
+	26.2 - Importando o objeto do Boss! - FEITO
+	26.3 - Definindo os estados do Boss! - 
+	26.4 - Criando o primeiro estado do Boss (Criar o tiro 2 enquanto fica parado) - FEITO
+		26.4.1 - Fazendo o Boss criar o tiro 2 do canhao central - FEITO
+		26.4.2 - Criando um tempo entre os disparos - FEITO
+		26.4.3 - Criando um metodo do estado 1 - FEITO
+		26.4.4 - Fazendo ele alternar de estado depois de algum tempo - FEITO
+	26.5 - Criando o segundo estado do Boss - 
+		26.5.1 - Fazendo o Boss dar o tiro 1 dos canhões pequenos ao mesmo tempo - FEITO
+	
 	
 	

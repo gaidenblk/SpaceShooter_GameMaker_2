@@ -10,7 +10,7 @@ escudo();
 
 if keyboard_check_pressed(vk_up) && level_tiro < 5
 {
-	level_tiro++;	
+	level_tiro++;
 }
 if keyboard_check_pressed(vk_down) && level_tiro > 1
 {
@@ -20,3 +20,4 @@ if keyboard_check_pressed(vk_down) && level_tiro > 1
 //Mantendo player nos limites da tela
 limitedatela();
 
+//show_debug_message(espera_tiro)

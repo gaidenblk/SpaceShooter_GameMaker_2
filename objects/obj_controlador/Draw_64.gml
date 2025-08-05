@@ -1,4 +1,4 @@
 /// @description Mostrando pontos na tela
 
-draw_text( 20, 20, "Pontos :" + string(pontos));
-draw_text( 20, 40, "Level :" + string(level));
+draw_text( 25, 85, "Pontos :" + string(pontos));
+draw_text( 25, 100, "Level :" + string(level));
