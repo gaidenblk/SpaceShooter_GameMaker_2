@@ -42,4 +42,4 @@ dropa_item = function(_chance)
 }
 
 //Acionando o alarm para disparo
-alarm[0] = room_speed/2;
+alarm[0] = game_get_speed(gamespeed_fps)/2;

@@ -1,2 +1,2 @@
 /// @description Se destruindo ao sair da tela
-instance_destroy();
+instance_destroy(id, false);

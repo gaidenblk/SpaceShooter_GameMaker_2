@@ -25,6 +25,7 @@ if estado_atual == "estado 1"
 }else if estado_atual == "estado 3"
 {
 	//Codigos do estado 3
+	estado_03();
 
 }else if estado_atual == "estado 4"
 {

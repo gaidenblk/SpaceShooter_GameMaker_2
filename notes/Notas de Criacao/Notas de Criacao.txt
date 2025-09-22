@@ -219,6 +219,16 @@
 		26.4.4 - Fazendo ele alternar de estado depois de algum tempo - FEITO
 	26.5 - Criando o segundo estado do Boss - 
 		26.5.1 - Fazendo o Boss dar o tiro 1 dos canhões pequenos ao mesmo tempo - FEITO
+		26.5.2 - Criando intervalo entre os tiros - FEITO
+		26.5.3 - Fazendo o boss se mover para os lados - FEITO
+		26.5.4 - Criando o metodo para o estado 2 - FEITO
+	26.6 - Criando o terceiro estado do boss
+		26.6.1 - Criando o tiro 2 do canhão no dobro do tempo da espera - FEITO
+		26.6.2 - Criando o tiro 2 dos canhões menores - FEITO
+		26.6.3 - Criando o tiro 1 e tiro 2 em tempos diferentes - FEITO
+		26.6.4 - Criando o metodo do estado 3 - FEITO
+	26.7 - Criando a vida do boss
+		
 	
 	
 	
