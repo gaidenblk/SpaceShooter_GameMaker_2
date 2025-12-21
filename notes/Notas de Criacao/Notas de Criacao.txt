@@ -228,7 +228,8 @@
 		26.6.3 - Criando o tiro 1 e tiro 2 em tempos diferentes - FEITO
 		26.6.4 - Criando o metodo do estado 3 - FEITO
 	26.7 - Criando a vida do boss
-		
+		26.7.1 - Iniciando a variavel da vida - FEITO
+		26.7.2 - Exibindo a Vida do Boss - 
 	
 	
 	

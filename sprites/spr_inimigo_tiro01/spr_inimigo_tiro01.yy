@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_inimigo_tiro01",
   "bboxMode":0,
   "bbox_bottom":26,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"81cc26de-d06d-4935-a3ad-29f1d12000a4","name":"81cc26de-d06d-4935-a3ad-29f1d12000a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"81cc26de-d06d-4935-a3ad-29f1d12000a4","name":"81cc26de-d06d-4935-a3ad-29f1d12000a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

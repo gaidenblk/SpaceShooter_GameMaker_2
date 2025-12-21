@@ -33,4 +33,3 @@ if estado_atual == "estado 1"
 
 }
 
-

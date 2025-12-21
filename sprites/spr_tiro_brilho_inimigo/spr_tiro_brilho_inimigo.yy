@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_tiro_brilho_inimigo",
   "bboxMode":0,
   "bbox_bottom":119,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3d2e96a6-34b0-4312-ab4d-6ad8e3a97dc8","name":"3d2e96a6-34b0-4312-ab4d-6ad8e3a97dc8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3d2e96a6-34b0-4312-ab4d-6ad8e3a97dc8","name":"3d2e96a6-34b0-4312-ab4d-6ad8e3a97dc8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

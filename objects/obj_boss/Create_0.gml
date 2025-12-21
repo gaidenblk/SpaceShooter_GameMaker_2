@@ -11,6 +11,11 @@ Estado 3 = Parado intercalando entre tiro 1 e 2
 Estado especial 1  = Invulnerável enquando cria 2 minions para se regenerar
 
 */
+
+//Setando a vida do Boss
+vida_max = 500;
+vida_atual = vida_max;
+
 //Setando velocidade Horizontal do Boss
 velocidade_horizontal = 5;
 
