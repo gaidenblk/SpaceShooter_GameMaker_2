@@ -1,0 +1,20 @@
+# --- GameMaker Studio 2 .gitignore ---
+
+# Pastas de cache e arquivos temporários do compilador
+# (O que o GMS2 gera para rodar o jogo)
+/cache/
+/__pycache__/
+/export/
+
+# Arquivos de preferências do usuário
+# (Configurações de janelas, abas abertas e histórico local)
+*.user
+*.resource_order
+ui_log.txt
+
+# Arquivos de sistema que não pertencem ao projeto
+Thumbs.db
+.DS_Store
+
+# Pasta de instaladores (caso você exporte o jogo para dentro da pasta)
+/options/windows/installer/
