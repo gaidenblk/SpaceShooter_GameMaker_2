@@ -2,8 +2,17 @@
 //Vidas iniciais do player
 vida = 3;
 
+//Iframes Base
+iframes = game_get_speed(gamespeed_fps);
+if_delay = iframes;
+pisca = 1
+alterna_pisca = 0.3
+
 //Quantidade de escudos iniciais
 qtd_escudo = 3;
+
+//Determinando o escudo do player
+meu_escudo = noone;
 
 //Velocidade base do player
 velocidade = 5;
@@ -49,11 +58,11 @@ escudo = function()
 	if !instance_exists(obj_escudo) && qtd_escudo > 0
 	{
 		var _ativar = keyboard_check_pressed(ord("E"))	
-		if _ativar
-		{
+		if _ativar {
 			//Aqui eu gero a criação do escudo e seto qual o id do alvo a ser criado e seguido
 			var _escudo = instance_create_layer(x, y, "Escudo", obj_escudo)	
 			_escudo.alvo = id;
+			meu_escudo = _escudo;
 			qtd_escudo--;
 		}
 	}
@@ -191,14 +200,25 @@ power_up = function(_chance)
 ///@method perde_vida()
 perde_vida = function()
 {
-	if vida > 1
-	{
+	if if_delay >= iframes && !meu_escudo {
 		vida--;
+		if_delay = 0;
 		screenshake(5);
 	}
-	else
-	{
+	if vida < 0 {
 		instance_destroy();
 		screenshake(25);
 	}
+}
+
+//Efeito dos iframes
+iframes_pisca = function() {
+	if if_delay < iframes {
+	if_delay++
+	
+	if pisca >= 1 || pisca <= 0.5 {
+		alterna_pisca *= -1
+	}
+		pisca += alterna_pisca;	
+	}	
 }

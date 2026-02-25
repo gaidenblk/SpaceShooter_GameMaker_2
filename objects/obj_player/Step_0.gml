@@ -8,6 +8,10 @@ atirando();
 //Ativando Escudo
 escudo();
 
+//Renovando os iframes
+iframes_pisca();
+show_debug_message(pisca)
+
 if keyboard_check_pressed(vk_up) && level_tiro < 5
 {
 	level_tiro++;

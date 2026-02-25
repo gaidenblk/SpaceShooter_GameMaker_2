@@ -2,9 +2,5 @@
 //Se destruindo
 instance_destroy();
 
-//Screenshake
-screenshake(5);
-
 //Destruindo o player
-other.perde_vida();
-
+if !other.meu_escudo other.perde_vida();
