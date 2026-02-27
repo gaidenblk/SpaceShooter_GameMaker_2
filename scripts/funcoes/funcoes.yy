@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"screenshake",
+  "%Name":"funcoes",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"screenshake",
+  "name":"funcoes",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
