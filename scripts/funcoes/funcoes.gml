@@ -32,3 +32,11 @@ function destroi_seq() {
 	    }
 	}
 }
+
+//Finalizando o jogo
+function finalizando_jogo() {
+	if instance_exists(obj_player) {
+		layer_sequence_create("Sequences",obj_player.x,obj_player.y,sq_finalizando)
+		instance_destroy(obj_player,false)
+	}
+}

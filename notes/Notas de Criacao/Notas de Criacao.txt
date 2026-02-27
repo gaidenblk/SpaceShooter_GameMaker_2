@@ -277,3 +277,25 @@
 		26.12.1 - Criando inimigos se eu ainda não estou no level 5 - FEITO
 		26.12.2 - Criando o BOSS se eu estou no level 5 - FEITO
 		26.12.3 - Garantindo que eu só vou criar o BOSS uma única vez - FEITO
+27 - Finalizando o Jogo! - 
+	27.1 - Criando a animação de término de level do player - FEITO
+	27.2 - Quando o BOSS morrer e a animação dele acabar, criar a animação do player na posição dele - FEITO
+		27.2.1 - Criar a função que executa a sequência do player - FEITO
+		27.2.2 - Fazendo o BOSS executar a função ao terminar a animação - FEITO
+	27.3 - Destruir o player e garantir que o obj_control NÃo vai achar que o jogador perdeu - FEITO
+		27.3.1 - Impedindo o player de executar o destroy event dele - FEITO
+		27.3.2 - Criando uma variável de controle para o control impedir que ele crie o game over - FEITO
+
+28 - Criar a tela inicial do jogo - 
+	28.1 - Criar a room da tela inicial - 
+	28.2 - Criar os botões - 
+	
+29 - Criar a transição das telas - 
+	
+30 - Criar a tela de pontuação do jogo - 
+
+
+
+
+
+

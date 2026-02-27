@@ -11,6 +11,9 @@ pontos = 0;
 //Iniciando Sistema de level
 level = 1;
 
+//Jogo finalizado?
+jogo_finalizado = false;
+
 //Função de spawn inimigo 01
 inimigo = function()
 {
