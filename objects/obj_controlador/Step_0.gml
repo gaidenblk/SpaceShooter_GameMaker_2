@@ -18,6 +18,7 @@ if gameover_seq != noone
 {
 	if keyboard_check_pressed(vk_enter)
 	{
-		game_restart();	
+		var _transicao = instance_create_layer(0, 0, "Player", obj_transicao)
+		_transicao.destino = rm_inicio
 	}	
 }

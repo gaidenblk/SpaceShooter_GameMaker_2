@@ -277,6 +277,7 @@
 		26.12.1 - Criando inimigos se eu ainda não estou no level 5 - FEITO
 		26.12.2 - Criando o BOSS se eu estou no level 5 - FEITO
 		26.12.3 - Garantindo que eu só vou criar o BOSS uma única vez - FEITO
+		
 27 - Finalizando o Jogo! - 
 	27.1 - Criando a animação de término de level do player - FEITO
 	27.2 - Quando o BOSS morrer e a animação dele acabar, criar a animação do player na posição dele - FEITO
@@ -287,12 +288,28 @@
 		27.3.2 - Criando uma variável de controle para o control impedir que ele crie o game over - FEITO
 
 28 - Criar a tela inicial do jogo - 
-	28.1 - Criar a room da tela inicial - 
-	28.2 - Criar os botões - 
+	28.1 - Criar a room da tela inicial - FEITO
+	28.2 - Criar os botões - FEITO
+		28.2.1 - Fazer com que a cor do botão mude se o mouse está por cima dele - FEITO
+		28.2.2 - Fazer o botão voltar a cor original quando o mouse sai dele - FEITO
+		28.2.3 - Desenhar o texto no botão - FEITO
+			28.2.3.1 - Desenhando a fonte centralizada - FEITO
+			28.2.3.1 - Permitir que o texto seja personalizado - FEITO
+		28.3 - Ao clicar no botão, instanciar o objeto transição com o destino personalizado - FEITO
+		28.4 - Retornando para inicio ao apertar enter depois de Morrer - FEITO
 	
 29 - Criar a transição das telas - 
+	29.1 - Criando o objeto transição - FEITO
+	29.2 - Fazendo ele escurecer a tela - FEITO
+		29.2.1 - Fazendo ele desenhar transparente e depois ficar escuro - FEITO
+		29.2.2 - Se o alpha for menor do que 1, então o alpha aumenta - FEITO
+	29.3 - Fazendo ele mudar de room depois que a tela ficar totalmente escura - FEITO
+	29.4 - Fazendo ele deixar a tela clara novamente - FEITO
+		29.4.1 - Deixando a tela clara ao trocar de room - FEITO
+		29.4.2 - Avisando quando eu troquei de room - FEITO
 	
 30 - Criar a tela de pontuação do jogo - 
+	33.1 - Criando um sistema de pontos que guarda as pontuações - 
 
 
 
