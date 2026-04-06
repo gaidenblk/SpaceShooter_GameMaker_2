@@ -10,3 +10,7 @@ dropa_item(chance);
 
 //Screenshake
 screenshake(shake);
+
+//Acrescentando em um no contantador de mortes
+obj_controlador.inimigos_mortos++
+global.total_inimigos++

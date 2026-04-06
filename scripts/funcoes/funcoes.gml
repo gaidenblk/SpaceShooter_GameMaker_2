@@ -40,3 +40,9 @@ function finalizando_jogo() {
 		instance_destroy(obj_player,false)
 	}
 }
+
+//Executando transição de room para o inicio
+function cria_transicao() {
+	var _transicao = instance_create_layer(0,0,"Player",obj_transicao)
+	_transicao.destino = rm_inicio
+}

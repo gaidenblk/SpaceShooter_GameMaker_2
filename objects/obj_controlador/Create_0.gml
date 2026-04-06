@@ -14,6 +14,9 @@ level = 1;
 //Jogo finalizado?
 jogo_finalizado = false;
 
+//Total inimigos mortos na partida
+inimigos_mortos = 0;
+
 //Função de spawn inimigo 01
 inimigo = function()
 {
@@ -43,10 +46,13 @@ ganha_pontos = function(_pontos)
 	pontos += _pontos;	
 	
 	//Subindo de Level
-	if pontos >= level * 200
-	{
+	if pontos >= level * 200 {
 		//Elevando level e criando loop
 		level++
-	
+	}
+		
+	//Aumenta pontuação maior caso ja tenha atingido o máximo
+	if pontos > global.max_pontos {
+		global.max_pontos = pontos;	
 	}
 }

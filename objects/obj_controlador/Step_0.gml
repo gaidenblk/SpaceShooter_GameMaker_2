@@ -10,7 +10,9 @@ if keyboard_check_pressed(ord("R"))
 if !instance_exists(obj_player) && !gameover_seq && !jogo_finalizado
 {
 	//Criando a sequencia de game over
-	gameover_seq = layer_sequence_create("Sequences", room_width / 2, room_height / 2, sq_gameover);	
+	gameover_seq = layer_sequence_create("Sequences", room_width / 2, room_height / 2, sq_gameover);
+	global.total_mortes++
+	
 }
 
 //permitindo o jogador reiniciar o jogo quando estiver na tela de gameover
