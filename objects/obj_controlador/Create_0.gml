@@ -1,7 +1,4 @@
 /// @description Iniciando variáveis
-//Aleatorizando o jogo
-randomize();
-
 //Setando Alarm do Spawn
 alarm[0] = 30;
 

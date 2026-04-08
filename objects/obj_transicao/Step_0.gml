@@ -15,8 +15,6 @@ if room_atual != prox_room {
 
 if mudou_room {
 	mudanca_transparencia *= -1
-	show_debug_message(mudou_room)
-	show_debug_message(room_atual)
 	mudou_room = false
 }
 

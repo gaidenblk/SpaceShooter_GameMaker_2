@@ -11,14 +11,14 @@ if !instance_exists(obj_inimigo01)
 }
 
 //Preparando a entrada do BOSS
-if level > 4 {
+if level > 9 {
 	if instance_exists(obj_inimigo01) instance_destroy(obj_inimigo01,false)
 	layer_sequence_create("Sequences", room_width / 2, 544,sq_boss_entrada)
+	
+	//Dando sequencia a entrada da musica do BOSS
+	audio_stop_sound(snd_darkling)
 	return
 }
-
-//Spawnando um powerup - DEBUG
-//instance_create_layer(random_range(100,1820),-100,"Player",obj_powerup)
 
 //Setando tempo de reativação
 alarm[0] = game_get_speed(gamespeed_fps);

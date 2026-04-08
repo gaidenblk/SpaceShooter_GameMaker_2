@@ -3,14 +3,6 @@
 //Alternando os estados
 alterna_estado();
 
-//show_debug_message(espera_estado)
-
-//debug do estado atual
-//show_debug_message(estado_atual);
-
-//debug vida Atual
-//show_debug_message(vida_atual)
-
 vida_atual = clamp(vida_atual, 0, vida_max)
 
 if (estado_atual != "estado 4"){

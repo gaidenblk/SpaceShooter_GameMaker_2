@@ -3,4 +3,4 @@
 instance_destroy();
 
 //Dando Vida para o BOSS
-other.ganha_vida(5);
+other.ganha_vida(50);

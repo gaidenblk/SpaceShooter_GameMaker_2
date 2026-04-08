@@ -24,7 +24,6 @@ function destroi_seq() {
 	    if layer_get_element_type(a[i]) == layerelementtype_sequence {
 	        var ins = layer_sequence_get_instance(a[i])
 			var seq_name = ins.sequence.name
-			show_debug_message(seq_name)
 			if (seq_name == "sq_boss_entrada") {
 				instance_create_layer(960,288,"Boss",obj_boss)
 			}
@@ -44,5 +43,5 @@ function finalizando_jogo() {
 //Executando transição de room para o inicio
 function cria_transicao() {
 	var _transicao = instance_create_layer(0,0,"Player",obj_transicao)
-	_transicao.destino = rm_inicio
+	_transicao.destino = rm_pontuacao
 }

@@ -4,11 +4,11 @@
 //Determinando probabilidade e cada powerup
 chance = random(100);
 //Cor do tiro
-if chance >= 90
+if chance >= 60
 {
 	cores = c_red;	
 }
-else if chance >= 45
+else if chance >= 30
 {
 	cores = c_blue;	
 }

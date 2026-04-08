@@ -12,5 +12,9 @@ instance_destroy(obj_boss_minion);
 //Determinando o ganho de pontos
 ganhando_pontos(ponto);
 
+//Resetando a musica
+audio_stop_sound(snd_aggressor)
+audio_play_sound(snd_darkling,1,true)
+
 //Screenshake
 screenshake(shake);

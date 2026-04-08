@@ -13,11 +13,11 @@ Estado especial 1  = Invulnerável enquando cria 2 minions para se regenerar
 */
 
 //Setando a vida do Boss
-vida_max = 500;
+vida_max = 1500;
 vida_atual = vida_max;
 
 //Quantidade de Shake
-shake = 10;
+shake = 15;
 
 //Definindo valor de ponto do inimigo
 ponto = 500;
@@ -26,7 +26,7 @@ ponto = 500;
 velocidade_horizontal = 5;
 
 //Setando o estado de ataque do Boss
-estado_atual = "estado 3";
+estado_atual = "estado 1";
 
 //Variavel de controle da geração dos minions
 criou_minion = false;
@@ -38,6 +38,9 @@ delay_tiro = game_get_speed(gamespeed_fps) / 2;
 //Setando tempo de estados
 delay_estado = game_get_speed(gamespeed_fps) * 5;
 espera_estado = delay_estado;
+
+//Iniciando musica ao entrar na room
+audio_play_sound(snd_aggressor,1,true)
 
 //Setando esquema de ganhar vida
 ///@method ganha_vida(vida recebida por disparo)

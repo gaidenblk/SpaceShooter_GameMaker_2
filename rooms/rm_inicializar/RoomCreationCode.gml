@@ -1,4 +1,7 @@
 //Código que roda sempre que a room é iniciada
+//Aleatorizando o jogo
+randomize();
+
 //Iniciar as minhas variáveis globais
 
 //Pontuação mais alta

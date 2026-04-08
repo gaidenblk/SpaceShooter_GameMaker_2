@@ -3,7 +3,7 @@
 vida = 3;
 
 //Iframes Base
-iframes = game_get_speed(gamespeed_fps);
+iframes = game_get_speed(gamespeed_fps) * 2;
 if_delay = iframes;
 pisca = 1
 alterna_pisca = 0.3
@@ -55,17 +55,16 @@ escudo = function()
 {
 	//Criando o escudo somente se ele não existe
 	//E quando a quantidade for maior que 0
-	if !instance_exists(obj_escudo) && qtd_escudo > 0
-	{
-		var _ativar = keyboard_check_pressed(ord("E"))	
-		if _ativar {
+	
+	var _ativar = keyboard_check_pressed(ord("E"))	
+	if (_ativar && qtd_escudo > 0 && !meu_escudo) {
+
 			//Aqui eu gero a criação do escudo e seto qual o id do alvo a ser criado e seguido
 			var _escudo = instance_create_layer(x, y, "Escudo", obj_escudo)	
 			_escudo.alvo = id;
 			meu_escudo = _escudo;
 			qtd_escudo--;
 		}
-	}
 }
 
 //Criando o método de disparo
@@ -78,6 +77,9 @@ atirando = function()
 	var fire = keyboard_check(vk_space);
 	if fire && espera_tiro <= 0
 	{
+		//Tocando audio ao efetuar disparo
+		audio_play_sound(sfx_laser1,1,false)
+		
 		//Ajustando frequencia de disparo pelo quantidade
 		qtd_tiros++
 		//Setando delay de disparo
@@ -159,7 +161,7 @@ tiro4 = function()
 ///@method power_up(chance)
 power_up = function(_chance)
 {
-	if _chance >= 90
+	if _chance >= 60
 	{
 		qtd_tiros_max++;
 		if level_tiro < 5
@@ -172,11 +174,11 @@ power_up = function(_chance)
 		}
 		
 	}
-	else if _chance >= 45
+	else if _chance >= 30
 	{
 		if velocidade < 10
 		{
-			velocidade += 0.5;
+			velocidade += 2;
 		}
 		else
 		{
@@ -185,7 +187,7 @@ power_up = function(_chance)
 	}
 	else
 	{
-		if espera_tiro > 3
+		if delay_tiro > 3
 		{
 			delay_tiro--
 		}
@@ -203,6 +205,9 @@ perde_vida = function()
 	if if_delay >= iframes && !meu_escudo {
 		vida--;
 		if_delay = 0;
+		
+		//Tocando audio ao levar dano
+		audio_play_sound(sfx_explosion, 1, false,,,5)
 		screenshake(5);
 	}
 	if vida < 0 {
@@ -216,9 +221,9 @@ iframes_pisca = function() {
 	if if_delay < iframes {
 	if_delay++
 	
-	if pisca >= 1 || pisca <= 0.5 {
-		alterna_pisca *= -1
-	}
+		if pisca >= 1 || pisca <= 0.5 {
+			alterna_pisca *= -1
+		}
 		pisca += alterna_pisca;	
 	}	
 }

@@ -328,10 +328,27 @@
 	30.10 - Criando uma fonte para tela de pontos - FEITO
 	30.11 - Fazendo a pontuação crescer visualmente de 0 a até o máximo na tela de pontos - FEITO
 	
+31 - Ajustes Gerais (novamente)
+	31.1 - Garantindo que o jogo é aleatório - FEITO
+	31.2 - Ajustando o nome do jogo - FEITO
 	
+32 - Criando os sons do Jogo
+		32.1 - Importando os Sons para o Jogo - FEITO
+		32.2 - Criando o som de explosão quando o objeto explosão é criado - FEITO
+		32.3 - Criando o som de tiro sempre que o player atirar - FEITO
+		32.4 - Criando o som de tiro sempre que o inimigo atirar - FEITO
+		32.5 - Criando o som de tiro sempre que o BOSS atirar - FEITO
+		32.6 - Criando o som do escudo do player nascendo - FEITO
+		32.7 - Criando o som do escudo do player sumindo - FEITO
+		32.8 - Criando o som Lose quando aparecer a tela de game over - FEITO
+		32.9 - Criando o som zap quando o tiro bater no escudo do player - FEITO
+		32.10 - Tocando musica do jogo quando o level iniciar - FEITO
+			32.10.1 - Parando de tocar as musicas quando que sair do level - FEITO
+		32.11 - Tocando a musica do BOSS quando ele entrar no level - FEITO
+			32.11.1 - Parando a musica do level quando o Boss entrar - FEITO
+			32.11.2 - Tocando a musica do Boss quando o Boss entrar - FEITO
 
-
-
-
-
-
+33 - Polindo o Jogo - 
+	33.1 - Tirando todos os debugs do jogo - FEITO
+	33.1 - Ajustando a Exibição dos pontos - FEITO
+	33.3 - Testando o Jogo - FEITO

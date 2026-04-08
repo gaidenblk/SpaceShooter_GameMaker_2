@@ -6,3 +6,6 @@ image_xscale = 5;
 image_yscale = 2;
 //Criando variável de alteração de cor
 cores = choose(c_aqua,c_fuchsia,c_green,c_lime);
+
+//Tocando audio ao instanciar objeto
+audio_play_sound(sfx_laser2, 1, false)
