@@ -25,7 +25,7 @@ function destroi_seq() {
 	        var ins = layer_sequence_get_instance(a[i])
 			var seq_name = ins.sequence.name
 			if (seq_name == "sq_boss_entrada") {
-				instance_create_layer(960,288,"Boss",obj_boss)
+				instance_create_layer(room_width / 2,288,"Boss",obj_boss)
 			}
 			layer_sequence_destroy(a[i]);
 	    }

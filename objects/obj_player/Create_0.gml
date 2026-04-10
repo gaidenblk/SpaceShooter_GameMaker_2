@@ -39,6 +39,8 @@ limitedatela = function()
 }
 
 //Criando função de movimentação do player
+image_speed = 0;
+image_index = clamp(image_index, 0, 16);
 movimenta = function()
 {
 	var up, down, left, right;
@@ -48,6 +50,62 @@ movimenta = function()
 	right = keyboard_check(ord("D")) || keyboard_check(vk_right);
 	y += (down - up) * velocidade;
 	x += (right - left) * velocidade;
+	
+var fr_loop_esq ,fr_loop_dir, fr_esq, fr_dir, fr_idle;
+//Baseado nos frames da imagem
+fr_loop_esq = image_index >= 6 && image_index <= 10
+fr_loop_dir = image_index >= 12 && image_index <= 16
+fr_esq = image_index > 4 && image_index <= 6
+fr_dir = image_index > 10 && image_index <= 12
+fr_idle = image_index <= 4
+
+	if (!left && !right) {
+		
+		//Verificando se está nos loops de cada lateral e joga pro ultimo frame de retorno
+		if (fr_loop_esq) image_index = 6;
+		if (fr_loop_dir) image_index = 12;
+	
+		//Caso esteja na lateral esquerda faz o retorno pro frame do idle
+		if (fr_esq) image_index -= 0.2
+		//Caso esteja na lateral direita faz o retorno pro frame do idle
+		if (fr_dir) image_index -= 0.2
+	
+		//Assim que atinge o limiar do frame joga de volta pro frame inicial do Idle
+		//Voltando da esquerda pro idle
+		if image_index >= 3.8 && image_index <= 4 image_index = 0
+		//Voltando da direita pro idle
+		if image_index >= 9.8 && image_index <= 10 image_index = 0
+		
+		//Retorna pra animação do idle
+		if (fr_idle) image_index += 0.2;
+
+	} else if (!fr_loop_dir && !fr_dir && left) {
+		//Movimentando para esquerda
+		//Garante que começa na faixa certa
+		if (fr_idle) image_index = 4;
+
+		image_index += 0.2;
+
+		//Quando chega no fim do loop, mantém nele
+		if (image_index >= 10) image_index = 6;
+		
+	} else if (!fr_loop_esq && !fr_esq && right) {
+		//Movimentando para direita
+		//Garante que começa na faixa certa
+		if (fr_idle) image_index = 10;
+
+		image_index += 0.2;
+
+		//Quando chega no fim do loop, mantém nele
+		if (image_index >= 16) image_index = 12;
+		
+	} else if (!fr_idle && (left || right)) {
+		//caso esteja em um lado e pressione para o outro faz a transicao reversa
+		image_index -= 0.3
+		
+		//Corrige o frame de inicio pra esquerda
+		if (left && image_index <= 10) image_index = 3.8;
+	}
 }
 
 //Ativando Escudo ao apertar tecla "E"

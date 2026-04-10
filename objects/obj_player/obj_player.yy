@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player",
-    "path":"sprites/spr_player/spr_player.yy",
+    "name":"sp_shooter_player",
+    "path":"sprites/sp_shooter_player/sp_shooter_player.yy",
   },
   "spriteMaskId":null,
   "visible":true,

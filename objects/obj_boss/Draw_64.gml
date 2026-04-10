@@ -9,8 +9,8 @@ vida_boss = (vida_atual/vida_max)*100
 
 //Corrigindo posicionamento da barra adicionando a conversão do tamanho da viewport
 //Ex: De 1920 para 1280 pro x, De 1080 para 720 pro y
-boss_x = round(x*0.6667);
-boss_y = round(y*0.6667);
+//boss_x = round(x*0.6667);
+//boss_y = round(y*0.6667);
 
 //Desenhando a barra de vida do chefe
-draw_healthbar(boss_x-100,boss_y-180,boss_x+ 100,boss_y-160, vida_boss,c_black,c_red,c_lime,0,true,true)
+draw_healthbar(40,25,500,10, vida_boss,c_black,c_red,c_lime,0,true,true)

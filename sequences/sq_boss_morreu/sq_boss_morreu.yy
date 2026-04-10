@@ -2,10 +2,10 @@
   "$GMSequence":"v1",
   "%Name":"sq_boss_morreu",
   "autoRecord":true,
-  "backdropHeight":1080,
+  "backdropHeight":1200,
   "backdropImageOpacity":0.5,
   "backdropImagePath":"",
-  "backdropWidth":1920,
+  "backdropWidth":900,
   "backdropXOffset":0.0,
   "backdropYOffset":0.0,
   "events":{

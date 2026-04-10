@@ -13,3 +13,5 @@ iframes_pisca();
 
 //Mantendo player nos limites da tela
 limitedatela();
+
+show_debug_message(image_index)
