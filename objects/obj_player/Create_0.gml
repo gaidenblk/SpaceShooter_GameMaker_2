@@ -35,7 +35,7 @@ limitedatela = function()
 	//Vertical
 	y = clamp(y, 0 + sprite_height/2, room_height - sprite_height/2)
 	//Horizontal
-	x = clamp(x, 0 + sprite_width/2, room_width - sprite_width/2)
+	x = clamp(x, 0 + sprite_width/3, room_width - sprite_width/3)
 }
 
 //Criando função de movimentação do player
@@ -101,7 +101,7 @@ fr_idle = image_index <= 4
 		
 	} else if (!fr_idle && (left || right)) {
 		//caso esteja em um lado e pressione para o outro faz a transicao reversa
-		image_index -= 0.3
+		image_index -= 0.3 + (velocidade * 0.02)
 		
 		//Corrige o frame de inicio pra esquerda
 		if (left && image_index <= 10) image_index = 3.8;
