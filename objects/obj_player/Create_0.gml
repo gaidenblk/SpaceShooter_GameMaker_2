@@ -41,8 +41,9 @@ limitedatela = function()
 //Criando função de movimentação do player
 image_speed = 0;
 image_index = clamp(image_index, 0, 16);
-movimenta = function(toque)
+movimenta = function()
 {
+	var toque = mouse_check_button(mb_left)
 	//Setando funcionalidades de toque direcionado
 	var toque_esq, toque_dir
 	toque_esq = toque && x > mouse_x + 50
@@ -52,7 +53,6 @@ movimenta = function(toque)
 		var _vel = velocidade * 0.005
 		x = lerp(x,mouse_x, _vel)
 		y = lerp(y,mouse_y, _vel)
-		atirando(toque)
 	}
 	
 	//Setando variáveis de movimentação padrão
@@ -142,13 +142,13 @@ escudo = function(toque_duplo)
 }
 
 //Criando o método de disparo
-atirando = function(toque)
+atirando = function()
 {
 	//Resfriando o tempo de disparo
 	espera_tiro--;
 	espera_tiro = clamp(espera_tiro,-1,30);
 	
-	var fire = keyboard_check(vk_space) || toque;
+	var fire = keyboard_check(vk_space) || mouse_check_button(mb_left);
 	if fire && espera_tiro <= 0
 	{
 		//Tocando audio ao efetuar disparo

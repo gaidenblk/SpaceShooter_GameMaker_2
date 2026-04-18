@@ -1,12 +1,12 @@
 /// @description Propriedades do player
 //Verificando primeiro se está tocando na tela
-var _toque = mouse_check_button(mb_left)
+
 
 //Criando a movimentação do player
-movimenta(_toque);
+movimenta();
 
 //Atirando
-atirando(_toque);
+atirando();
 
 //Ativando Escudo
 escudo(false);
