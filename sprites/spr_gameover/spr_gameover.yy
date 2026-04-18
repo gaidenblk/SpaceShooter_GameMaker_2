@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_gameover",
   "bboxMode":0,
-  "bbox_bottom":883,
+  "bbox_bottom":938,
   "bbox_left":178,
   "bbox_right":1739,
   "bbox_top":232,

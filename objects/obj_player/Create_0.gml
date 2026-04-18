@@ -41,16 +41,32 @@ limitedatela = function()
 //Criando função de movimentação do player
 image_speed = 0;
 image_index = clamp(image_index, 0, 16);
-movimenta = function()
+movimenta = function(toque)
 {
+	//Setando funcionalidades de toque direcionado
+	var toque_esq, toque_dir
+	toque_esq = toque && x > mouse_x + 50
+	toque_dir = toque && x < mouse_x - 50
+	
+	if (toque) {
+		var _vel = velocidade * 0.005
+		x = lerp(x,mouse_x, _vel)
+		y = lerp(y,mouse_y, _vel)
+		atirando(toque)
+	}
+	
+	//Setando variáveis de movimentação padrão
 	var up, down, left, right;
 	up = keyboard_check(ord("W")) || keyboard_check(vk_up);
 	down = keyboard_check(ord("S")) || keyboard_check(vk_down);
-	left = keyboard_check(ord("A")) || keyboard_check(vk_left);
-	right = keyboard_check(ord("D")) || keyboard_check(vk_right);
-	y += (down - up) * velocidade;
-	x += (right - left) * velocidade;
+	left = keyboard_check(ord("A")) || keyboard_check(vk_left) || toque_esq;
+	right = keyboard_check(ord("D")) || keyboard_check(vk_right) || toque_dir;
 	
+	if (!toque) {
+		y += (down - up) * velocidade;
+		x += (right - left) * velocidade;
+	}
+		
 var fr_loop_esq ,fr_loop_dir, fr_esq, fr_dir, fr_idle;
 //Baseado nos frames da imagem
 fr_loop_esq = image_index >= 6 && image_index <= 10
@@ -109,12 +125,12 @@ fr_idle = image_index <= 4
 }
 
 //Ativando Escudo ao apertar tecla "E"
-escudo = function()
+escudo = function(toque_duplo)
 {
 	//Criando o escudo somente se ele não existe
 	//E quando a quantidade for maior que 0
-	
-	var _ativar = keyboard_check_pressed(ord("E"))	
+
+	var _ativar = keyboard_check_pressed(ord("E")) || toque_duplo
 	if (_ativar && qtd_escudo > 0 && !meu_escudo) {
 
 			//Aqui eu gero a criação do escudo e seto qual o id do alvo a ser criado e seguido
@@ -126,13 +142,13 @@ escudo = function()
 }
 
 //Criando o método de disparo
-atirando = function()
+atirando = function(toque)
 {
 	//Resfriando o tempo de disparo
 	espera_tiro--;
 	espera_tiro = clamp(espera_tiro,-1,30);
 	
-	var fire = keyboard_check(vk_space);
+	var fire = keyboard_check(vk_space) || toque;
 	if fire && espera_tiro <= 0
 	{
 		//Tocando audio ao efetuar disparo

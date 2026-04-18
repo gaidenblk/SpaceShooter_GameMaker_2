@@ -14,7 +14,7 @@ if !instance_exists(obj_player) && !gameover_seq && !jogo_finalizado
 //permitindo o jogador reiniciar o jogo quando estiver na tela de gameover
 if gameover_seq != noone
 {
-	if keyboard_check_pressed(vk_enter)
+	if keyboard_check_pressed(vk_enter) || mouse_check_button_pressed(mb_left)
 	{
 		var _transicao = instance_create_layer(0, 0, "Player", obj_transicao)
 		_transicao.destino = rm_inicio

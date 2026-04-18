@@ -5,7 +5,7 @@ vspeed = 3;
 //Definindo valor de ponto do inimigo
 ponto = 10;
 //Determinando vida do inimigo
-inimigo_vida = 1;
+inimigo_vida = 3;
 //Chance do inimigo dropar o item
 chance = 20;
 //Quantidade de Shake
