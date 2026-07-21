@@ -5,7 +5,8 @@ event_inherited();
 //Definindo valor de ponto do inimigo
 ponto = 25;
 //Definindo vida do inimigo 2
-inimigo_vida = 7;
+vida_max = 7
+inimigo_vida = vida_max;
 //Chance de drop de item
 chance = 35;
 //Quantidade de shake

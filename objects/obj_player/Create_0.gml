@@ -52,7 +52,7 @@ movimenta = function()
 	if (toque) {
 		var _vel = velocidade * 0.005
 		x = lerp(x,mouse_x, _vel)
-		y = lerp(y,mouse_y, _vel)
+		y = lerp(y,mouse_y-45, _vel)
 	}
 	
 	//Setando variáveis de movimentação padrão

@@ -14,6 +14,10 @@ escala = 1;
 aumento_escala = 0.01;
 //Variavel de controle de primeiro disparo
 disparou = false;
+//Efeito de dano
+pisca_cor = 1;
+alterna_pisca = 0.3;
+cor_base = c_aqua;
 
 //Criando função atirando
 //Fazendo o inimigo atirar SE estiver dentro da tela
@@ -40,3 +44,14 @@ image_alpha = 0;
 
 //Acionando o alarm para disparo
 alarm[0] = game_get_speed(gamespeed_fps)*2;
+
+//Efeito de Dano
+efeito_dano = function() {
+	if inimigo_vida < vida_max {
+	
+		if pisca_cor >= 1 || pisca_cor <= 0.3 {
+			alterna_pisca *= -1
+		}
+		pisca_cor += alterna_pisca;
+	}	
+}

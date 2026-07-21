@@ -15,3 +15,5 @@ if escala > 1.3 || escala < 0.8 {
 }
 
 escala += aumento_escala;
+
+efeito_dano()

@@ -5,7 +5,12 @@ vspeed = 3;
 //Definindo valor de ponto do inimigo
 ponto = 10;
 //Determinando vida do inimigo
-inimigo_vida = 3;
+vida_max = 3
+inimigo_vida = vida_max;
+//Efeito de dano
+pisca_cor = 1;
+alterna_pisca = 0.3;
+cor_base = -1;
 //Chance do inimigo dropar o item
 chance = 20;
 //Quantidade de Shake
@@ -43,3 +48,14 @@ dropa_item = function(_chance)
 
 //Acionando o alarm para disparo
 alarm[0] = game_get_speed(gamespeed_fps)/2;
+
+//Efeito de Dano
+efeito_dano = function() {
+	if inimigo_vida < vida_max {
+	
+		if pisca_cor >= 1 || pisca_cor <= 0.5 {
+			alterna_pisca *= -1
+		}
+		pisca_cor += alterna_pisca;	
+	}	
+}

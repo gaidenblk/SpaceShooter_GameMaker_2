@@ -11,3 +11,5 @@ if inimigo_vida <= 0
 {
 	instance_destroy(id,true);	
 }
+
+efeito_dano()
